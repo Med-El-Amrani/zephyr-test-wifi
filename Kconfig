@@ -1,0 +1,17 @@
+# Application Kconfig
+
+mainmenu "WiFi Example Configuration"
+
+config WIFI_SSID
+	string "WiFi SSID"
+	default "YourWiFiSSID"
+	help
+	  WiFi network name (SSID) to connect to
+
+config WIFI_PASSWORD
+	string "WiFi Password"
+	default "YourWiFiPassword"
+	help
+	  WiFi network password (WPA2-PSK)
+
+source "Kconfig.zephyr"
